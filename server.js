@@ -26,7 +26,7 @@ db.connect((err) => {
   console.log("MySql Connected...");
 });
 
-// Read DB
+// Read DB 
 app.get("/", (req, res) => {
   let sql = "SELECT * FROM users";
   let query = db.query(sql, (err, result) => {
